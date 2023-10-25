@@ -20,8 +20,7 @@ def main():
             pdf_base64 = base64.b64encode(uploaded_file.read()).decode('utf-8')
             
             #linha alterada
-            st.write(f'<iframe src="data:application/pdf;base64,{pdf_base64}" width="100%" height="600" style="border: none;
-           " sandbox="allow-same-origin allow-scripts allow-popups allow-modals"></iframe>',
+            st.write(f'<iframe src="data:application/pdf;base64,{pdf_base64}" width="100%" height="600" style="border: none;" sandbox="allow-same-origin allow-scripts allow-popups allow-modals"></iframe>',
                      unsafe_allow_html=True)
 
 
